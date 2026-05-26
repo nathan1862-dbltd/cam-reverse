@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/thebertg/cam-reverse/
+    - export DEPLOYPATH=/home/thebertg/cam.thebizportwebs.online/
 
     - /bin/mkdir -p $DEPLOYPATH
 
