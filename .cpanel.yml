@@ -1,0 +1,16 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/thebertg/cam-reverse/
+
+    - /bin/mkdir -p $DEPLOYPATH
+
+    - /bin/cp -R * $DEPLOYPATH
+
+    - cd $DEPLOYPATH
+
+    - npm install
+
+    - npm run build
+
+    - touch tmp/restart.txt
